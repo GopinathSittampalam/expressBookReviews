@@ -49,7 +49,7 @@ public_users.get('/review/:isbn',function (req, res) {
   let myISBN = req.params.isbn;
   let review = books.filter((book)=>book.isbn === myISBN);
   //res.send(JSON.stringify(review));
-  return res.status(200).json(review);
+  return res.status(200).json(review[0].reviews);
   //return res.status(200).json({message: "Reviews were filtered by ISBN"});
 });
 

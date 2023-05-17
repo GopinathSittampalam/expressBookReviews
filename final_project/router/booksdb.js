@@ -1,7 +1,7 @@
 let books = [
       {"author": "Chinua Achebe","title": "Things Fall Apart", "reviews": {},"isbn":"978-3-16-148410-0" },
       {"author": "Hans Christian Andersen","title": "Fairy tales", "reviews": {},"isbn":"978-3-16-148410-1" },
-      {"author": "Dante Alighieri","title": "The Divine Comedy", "reviews": {},"isbn":"978-3-16-148410-2" },
+      {"author": "Dante Alighieri","title": "The Divine Comedy", "reviews": {1:"Good book",2:"interesting"},"isbn":"978-3-16-148410-2" },
       {"author": "Unknown","title": "The Epic Of Gilgamesh", "reviews": {} ,"isbn":"978-3-16-148410-3"},
       {"author": "Unknown","title": "The Book Of Job", "reviews": {} ,"isbn":"978-3-16-148410-4"},
       {"author": "Unknown","title": "One Thousand and One Nights", "reviews": {} ,"isbn":"978-3-16-148410-5"},
