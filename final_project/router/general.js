@@ -6,8 +6,8 @@ const public_users = express.Router();
 
 
 public_users.post("/register", (req,res) => {
-  //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+  users.push(req.body);
+  return res.status(200).json({message: "user Registered"});
 });
 
 // Get the book list available in the shop
@@ -48,9 +48,7 @@ public_users.get('/title/:title',function (req, res) {
 public_users.get('/review/:isbn',function (req, res) {
   let myISBN = req.params.isbn;
   let review = books.filter((book)=>book.isbn === myISBN);
-  //res.send(JSON.stringify(review));
   return res.status(200).json(review[0].reviews);
-  //return res.status(200).json({message: "Reviews were filtered by ISBN"});
 });
 
 module.exports.general = public_users;
